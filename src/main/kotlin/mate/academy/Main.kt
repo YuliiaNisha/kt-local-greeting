@@ -1,7 +1,16 @@
 package mate.academy
 
 fun greetUsers() {
-    // implement function
+    var name: String?
+
+    while (true) {
+        println("Please enter a name (or press Enter to quit): ")
+        name = readLine()
+        if (name.isNullOrEmpty()) {
+            break
+        }
+        println("Hello, $name!")
+    }
 }
 
 fun main() {
